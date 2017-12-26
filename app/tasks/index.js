@@ -1,5 +1,4 @@
-const schedule = require('./schedule')
 
 module.exports = () => {
-  schedule()
+  require('./schedule')()
 }
