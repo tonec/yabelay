@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.2",
     "mongoose": "^4.13.7",
     "restify": "^6.3.4"
   },

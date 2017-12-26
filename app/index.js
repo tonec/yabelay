@@ -1,6 +1,5 @@
 const restify = require('restify')
 const mongoose = require('mongoose')
-const bodyParser = require('body-parser')
 const config = require('../config')
 const routes = require('./routes')
 
@@ -12,7 +11,9 @@ if (process.env.NODE_ENV !== 'test') {
   mongoose.connect(config.db.uri, { useMongoClient: true })
 }
 
-app.use(bodyParser.json())
+app.use(restify.plugins.jsonBodyParser({ mapParams: true }))
+app.use(restify.plugins.queryParser({ mapParams: true }))
+app.use(restify.plugins.acceptParser(app.acceptable))
 
 routes(app)
 
