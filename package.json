@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "is-master": "^1.2.2",
+    "lodash": "^4.17.4",
+    "lodash.sortby": "^4.7.0",
     "mongoose": "^4.13.7",
     "node-schedule": "^1.2.5",
     "restify": "^6.3.4",

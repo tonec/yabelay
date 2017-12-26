@@ -1,6 +1,5 @@
-const { request } = require('../../../modules/helpers')
-const keys = require('../../../config/keys')
-const queryString = require('../../../utils/queryString')
+const { request, queryString } = require('../../../modules/helpers')
+const keys = require('../../../../config/keys')
 
 const key = keys.BING_KEY_1
 
